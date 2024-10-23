@@ -3,6 +3,8 @@ Ex02-Linux Process API-fork(), wait(), exec()
 # Ex02-OS-Linux-Process API - fork(), wait(), exec()
 Operating systems Lab exercise
 
+## Name: Dineshkarthik N
+## Registernumber: 212223220021
 
 # AIM:
 To write C Program that uses Linux Process API - fork(), wait(), exec()
@@ -49,14 +51,16 @@ int main(void)
 ```
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/27dd1f57-917b-4318-b60d-030163e0312e)
+![alt text](image.png)
 
 
 ## C Program to create new process using Linux API system calls fork() and exit()
 
 ```
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 int main()
 { int pid; 
 pid=fork(); 
@@ -75,15 +79,16 @@ exit(0);}
 
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/f52aa5fd-4a77-4664-8373-82bb2dfc6480)
-
+![alt text](image-2.png)
 
 ## C Program to execute Linux system commands using Linux API system calls exec() family
 
 ```
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <sys/types.h>
+
 int main()
 {       int status;
         printf("Running ps with execlp\n");
@@ -109,8 +114,7 @@ printf("Running ps with execlp. Now with path specified\n");
 
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/33609bf7-0124-4652-b0ce-becb8006ca34)
-
+![alt text](image-1.png)
 
 # RESULT:
-	The programs are executed successfully.
+The programs are executed successfully.
